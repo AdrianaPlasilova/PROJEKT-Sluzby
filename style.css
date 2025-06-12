@@ -1,32 +1,73 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-.body {
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #8B8B8B;
   background-color: #FAFAFA;
   line-height: 1.3;
+  margin: 0;
 }
 
 h1,
 h2 {
   color: #000000;
-  font-weight: medium;
+  font-weight: 500;
+  text-align: center;
 }
 
 h1 {
   font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #407BFF;
+  margin: 10px auto 0 auto;
 }
 
 h2 {
 font-size: 16px;
 }
 
-.obdelnik p {
-  font-size: 13px;
-  font-weight: lighter;
+p {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 60px 20px;
+}
+
+section {
+  margin: 60px 0;
+}
+
+.hero-image-sloupec {
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 300px;
+
+}
+
+.knofliky {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.knofliky .button:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .button {
@@ -35,4 +76,39 @@ font-size: 16px;
   font-weight: 400;
   line-height: 1;
   border-radius: 30px;
+  text-decoration: none;
+  color: #FAFAFA;
 }
+
+.button--prim {
+  background-color: #407BFF;
+}
+
+.button--sec {
+  background-color: #8B8B8B;
+}
+
+.obdelnik {
+  display: flex;
+  box-shadow: 0px 4px 6px #407BFF1F;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: 13px;
+  color: #8B8B8B;
+  font-weight: 300;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+}
+
+.ikonka {
+  flex: 0 0 50px;
+  margin-right: 23px;
+  width: auto;
+  height: 40px;
+  text-align: center;
+}
+
+
+
