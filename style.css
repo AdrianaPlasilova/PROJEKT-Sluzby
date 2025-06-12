@@ -152,8 +152,10 @@ section {
 }
 .ikonka {
   margin-bottom: 20px;
+  margin-right: 0;
 }
 }
+
 
 /* DESKTOP */
 
@@ -219,10 +221,6 @@ h1::after {
 
 .skupina p {
   text-align: center;
-}
-
-.ikonka {
-  margin-right: 0;
 }
 
 .sluzby-text {
